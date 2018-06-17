@@ -1,0 +1,27 @@
+<link href="base-component.html" rel="import"/>
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<dom-module id="test-extended">
+    <template>
+        <style>
+         
+        </style>
+
+        <h3>Extended element</h3>
+        
+    </template>
+
+    <script>
+     class TestExtended extends BaseComponent {
+         static get is() {
+             return "test-extend";
+         }
+
+         static get properties () {
+             return {
+
+             };
+         }
+     }
+     window.customElements.define(TestExtended.is, TestExtended);
+    </script>
+</dom-module>

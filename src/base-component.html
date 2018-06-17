@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link href="../bower_components/granite-bootstrap/granite-bootstrap.html" rel="import"/>
+<dom-module id="base-component">
+    <template>
+        <style include="granite-bootstrap">
+         
+        </style>
+
+        <h1>The basic component inheritance</h1>
+
+    </template>
+
+    <script>
+     class BaseComponent extends Polymer.Element {
+         static get is() {
+             return 'base-component';
+         }
+
+         static get properties() {
+             return {
+                 url: String,
+             };
+         }
+
+     }
+     window.customElements.define(BaseComponent.is, BaseComponent);
+    </script>
+</dom-module>
